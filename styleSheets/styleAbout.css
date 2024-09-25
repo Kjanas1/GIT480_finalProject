@@ -1,0 +1,39 @@
+
+main{
+    display: grid;
+    grid-template-areas: "aboutTitle"
+    "pic"
+    "aboutBody"
+    "mission";
+}
+#aboutUs{
+    grid-area: about;
+}
+#aboutTitle{
+    grid-area: aboutTitle;
+    text-align: center;
+}
+#aboutBody{
+    grid-area: aboutBody;
+}
+#mission{
+    grid-area: mission;
+}
+#mission h2{
+    text-align: center;
+}
+picture{
+    grid-area: pic;
+}
+img{
+    width: 100%;
+}
+@media screen and (min-width: 801px) {
+    main{
+        display: grid;
+        justify-content: space-between;
+        grid-template-areas: "aboutTitle aboutTitle aboutTitle"
+        "aboutBody aboutBody aboutBody"
+        "pic pic mission";
+    }
+}

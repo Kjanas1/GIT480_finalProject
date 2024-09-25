@@ -1,48 +1,68 @@
-body{
-    margin: 0;   
+body {
+    margin: 0;
+    background-color: aqua;
 }
-img{
+
+picture {
+    background-color: red;
+    /* not sure what's happening here */
+}
+
+img {
     width: 100%;
 }
-section{
+
+section {
     position: relative;
     text-align: center;
 }
 
-div{
+div {
     display: grid;
     /* flex-direction: column; */
     /* width: 33%; */
     max-height: 100%;
+    overflow: hidden;
 }
-div p{
+
+div p {
     grid-area: bodytext;
 }
-div h1{
+
+div h1 {
     grid-area: title;
 }
-div a{
+
+div a {
     grid-area: button;
 }
-section:nth-child(1) div{
+
+section:nth-child(1) div {
     position: absolute;
-    bottom: 8px;
+    /* bottom: 8px; */
     right: 16px;
     grid-template-areas: "title ."
-"bodytext button";
+        "bodytext button";
 }
-section:nth-child(2) div{
+
+section:nth-child(2) div {
     position: absolute;
-    bottom: 8px;
-    left: 16px;
+    /* bottom: 8px; */
+    /* left: 16px; */
+    grid-template-areas: ". title"
+        "button bodytext";
 }
-section:nth-child(3) div{
+
+section:nth-child(3) div {
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    bottom: 8px;
-    left: 50%;
+    /* bottom: 8px; */
+    /* left: 50%; */
 }
-.button{
-    padding: 20px 0;
+
+.button {
+    padding: 20px 15px;
     margin: 10px;
     border-radius: 32px;
     background-color: yellow;
@@ -50,10 +70,37 @@ section:nth-child(3) div{
     border-width: 0;
     text-decoration: none;
     font-size: 24px;
+    /* text-wrap: wrap; */
+    max-height: 40px;
 }
-button:hover{
+
+button:hover {
     background-color: aqua;
 }
-button:active{
+
+button:active {
     background-color: red;
+}
+
+@media screen and (min-width: 801px) {
+    body {
+        background-color: blueviolet;
+    }
+    section:nth-child(1) div,section:nth-child(3) div {
+        position: absolute;
+        bottom: 8px;
+        right: 16px;
+        width: 30%;
+        grid-template-areas: "title ."
+            "bodytext button";
+    }
+    
+    section:nth-child(2) div {
+        position: absolute;
+        bottom: 8px;
+        left: 16px;
+        width: 30%;
+        grid-template-areas: ". title"
+            "button bodytext";
+    }
 }
