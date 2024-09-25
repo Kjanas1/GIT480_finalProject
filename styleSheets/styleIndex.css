@@ -1,0 +1,59 @@
+body{
+    margin: 0;   
+}
+img{
+    width: 100%;
+}
+section{
+    position: relative;
+    text-align: center;
+}
+
+div{
+    display: grid;
+    /* flex-direction: column; */
+    /* width: 33%; */
+    max-height: 100%;
+}
+div p{
+    grid-area: bodytext;
+}
+div h1{
+    grid-area: title;
+}
+div a{
+    grid-area: button;
+}
+section:nth-child(1) div{
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    grid-template-areas: "title ."
+"bodytext button";
+}
+section:nth-child(2) div{
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+section:nth-child(3) div{
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+}
+.button{
+    padding: 20px 0;
+    margin: 10px;
+    border-radius: 32px;
+    background-color: yellow;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.808);
+    border-width: 0;
+    text-decoration: none;
+    font-size: 24px;
+}
+button:hover{
+    background-color: aqua;
+}
+button:active{
+    background-color: red;
+}
