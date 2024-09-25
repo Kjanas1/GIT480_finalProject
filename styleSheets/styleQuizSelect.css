@@ -1,0 +1,77 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+}
+
+div {
+    display: grid;
+    grid-template-areas: "button pic"
+        "body pic";
+}
+
+div:nth-child(3) {
+    display: grid;
+    grid-template-areas: "pic button"
+        "pic body";
+}
+
+div a {
+    grid-area: button;
+}
+
+picture {
+    grid-area: pic;
+}
+
+p {
+    grid-area: body;
+}
+.button {
+    padding: 20px 15px;
+    margin: 10px;
+    border-radius: 32px;
+    background-color: yellow;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.808);
+    border-width: 0;
+    text-decoration: none;
+    font-size: 24px;
+    /* text-wrap: wrap; */
+    max-height: 40px;
+}
+
+@media screen and (min-width: 801px) {
+    main {
+        display: grid;
+        grid-template-areas: "title title title"
+            "option1 option2 option3";
+        text-align: center;
+    }
+
+    h1 {
+        grid-area: title;
+    }
+
+    div:nth-child(2) {
+        grid-area: option1;
+    }
+
+    div:nth-child(3) {
+        grid-area: option2;
+    }
+
+    div:nth-child(4) {
+        grid-area: option3;
+    }
+
+    div,
+    div:nth-child(3) {
+        grid-template-areas: "pic"
+            "button"
+            "body";
+    }
+}

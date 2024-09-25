@@ -74,11 +74,11 @@ section:nth-child(3) div {
     max-height: 40px;
 }
 
-button:hover {
+.button:hover {
     background-color: aqua;
 }
 
-button:active {
+.button:active {
     background-color: red;
 }
 

@@ -159,7 +159,7 @@ body {
 main{
 	background-color: seashell;
 	padding: 20px;
-	margin: 0 20px;
+	margin: 10px 0 0 0  ;
 }
 
 #jump{
@@ -196,5 +196,8 @@ footer {
 
 /* --- Screen width: >1024px --- */
 @media screen and (min-width: 801px) {
-
+	main{
+		padding: 20px;
+		margin: 0 20px;
+	}
 }

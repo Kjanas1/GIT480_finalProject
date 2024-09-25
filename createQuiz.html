@@ -10,6 +10,7 @@
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <title>Main</title>
     <link rel="stylesheet" href="styleSheets/style.css">
+    <link rel="stylesheet" href="styleSheets/styleCreateQuiz.css">
 </head>
 
 <body>
@@ -32,16 +33,20 @@
 
     <main>
         <h1>Create a quiz</h1>
-        <p>Quiz Title form placeholder</p>
-            <div>
-                <p>Question 1 placeholder</p>
-                <p>Answer 1 placeholder</p>
-                <p>Answer 2 placeholder</p>
-                <p>Answer 3 placeholder</p>
-                <p>Answer 4 placeholder</p>
-            </div>
-        <button>Add another Question</button>
-        <button>Finish Quiz</button>
+        <form id="quizName">
+            <label for="name"></label><input type="text" id="name">
+        </form>
+        <form class="question">
+            <h2>Question 1 placeholder</h2>
+            <input type="text" id="q1Answer1">
+            <input type="text" id="q1Answer2">
+            <input type="text" id="q1Answer3">
+            <input type="text" id="q1Answer4">
+        </form>
+        <div id="buttonContainer">
+            <button>Add another Question</button>
+            <button>Finish Quiz</button>
+        </div>
     </main>
 
     <footer>

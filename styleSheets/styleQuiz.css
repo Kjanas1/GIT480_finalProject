@@ -1,0 +1,24 @@
+button {
+    padding: 20px 15px;
+    margin: 10px;
+    border-radius: 32px;
+    background-color: yellow;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.808);
+    border-width: 0;
+    text-decoration: none;
+    font-size: 24px;
+    /* text-wrap: wrap; */
+    max-height: 40px;
+}
+button:hover {
+    background-color: aqua;
+}
+
+button:active {
+    background-color: red;
+}
+.question{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
