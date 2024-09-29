@@ -159,7 +159,11 @@ body {
 main{
 	background-color: seashell;
 	padding: 20px;
-	margin: 10px 0 0 0  ;
+	margin: 10px 0 0 0;
+	
+	/* margin: 10px auto 0; */
+	/* max-width: 1600px; */
+	/* in case I want a small border on larger sizes. Will need to fix pages to do this */
 }
 
 #jump{
@@ -195,9 +199,9 @@ footer {
 }
 
 /* --- Screen width: >1024px --- */
-@media screen and (min-width: 801px) {
+/* @media screen and (min-width: 801px) {
 	main{
 		padding: 20px;
 		margin: 0 20px;
 	}
-}
+} */

@@ -15,7 +15,6 @@ button {
     text-decoration: none;
     font-size: 24px;
     /* text-wrap: wrap; */
-    max-height: 40px;
 }
 button:hover {
     background-color: aqua;

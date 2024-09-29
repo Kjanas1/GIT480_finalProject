@@ -8,7 +8,9 @@ button {
     text-decoration: none;
     font-size: 24px;
     /* text-wrap: wrap; */
-    max-height: 40px;
+}
+img{
+    display: none;
 }
 button:hover {
     background-color: aqua;
@@ -21,4 +23,32 @@ button:active {
     text-align: center;
     display: flex;
     flex-direction: column;
+}
+.answerBank {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+@media screen and (min-width: 801px) {
+    img{
+        display:initial;
+    }
+    .question {
+        display: grid;
+        grid-template-areas: "h2 img"
+        "p img"
+        "answers img";
+        grid-template-columns: 2fr 1fr;
+    }
+    .question h2{
+        grid-area: h2;
+    }
+    .question p{
+        grid-area: p;
+    }
+    .question picture{
+        grid-area: img;
+    }
+    .question .answerBank{
+        grid-area: answers;
+    }
 }

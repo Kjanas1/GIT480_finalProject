@@ -12,6 +12,10 @@ div {
     display: grid;
     grid-template-areas: "button pic"
         "body pic";
+    padding: 20px 0;
+        grid-auto-columns: 1fr;
+        text-align: center;
+        align-items: center;
 }
 
 div:nth-child(3) {
@@ -22,6 +26,7 @@ div:nth-child(3) {
 
 div a {
     grid-area: button;
+    align-self: center;
 }
 
 picture {
@@ -31,6 +36,7 @@ picture {
 p {
     grid-area: body;
 }
+
 .button {
     padding: 20px 15px;
     margin: 10px;
@@ -40,8 +46,7 @@ p {
     border-width: 0;
     text-decoration: none;
     font-size: 24px;
-    /* text-wrap: wrap; */
-    max-height: 40px;
+    /* max-height: 40px; */
 }
 
 @media screen and (min-width: 801px) {
@@ -50,6 +55,10 @@ p {
         grid-template-areas: "title title title"
             "option1 option2 option3";
         text-align: center;
+    }
+
+    div {
+        padding: 20px;
     }
 
     h1 {

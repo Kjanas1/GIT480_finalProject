@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="keywords" content="HTML, CSS, JavaScript">
-    <title>Main</title>
+    <title>Quiz</title>
     <link rel="stylesheet" href="styleSheets/style.css">
     <link rel="stylesheet" href="styleSheets/styleQuiz.css">
 </head>
@@ -37,12 +37,17 @@
         <div class="question"> <!-- each Question -->
             <h2>Question Number</h2>
             <p>Question Body</p>
-            <div>
+            <div class="answerBank">
                 <button>Answer 1</button>
                 <button>Answer 2</button>
                 <button>Answer 3</button>
                 <button>Answer 4</button>
             </div>
+            <picture>
+                <source media="(min-width:650px)" srcset="graphics\images\quizPlaceholder_Lg.png">
+                <source media="(min-width:465px)" srcset="graphics\images\quizPlaceholder_Sm.png">
+                <img src="graphics\images\quizSelectPlaceholder_Lg.png" alt="">
+            </picture>
         </div>
     </main>
 
