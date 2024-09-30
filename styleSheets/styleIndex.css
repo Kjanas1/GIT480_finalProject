@@ -9,7 +9,7 @@ main {
 }
 
 picture {
-    background-color: red;
+    background-color: ccp;
     /* not sure what's happening here */
 }
 
@@ -73,11 +73,12 @@ section:nth-child(3) div {
     display: flex;
     flex-direction: column;
     height: 100%;
+    justify-content: center;
     /* bottom: 8px; */
     /* left: 50%; */
 }
 
-.button {
+/* .button {
     padding: 20px 15px;
     margin: 10px;
     border-radius: 32px;
@@ -86,7 +87,6 @@ section:nth-child(3) div {
     border-width: 0;
     text-decoration: none;
     font-size: 24px;
-    /* text-wrap: wrap; */
     max-height: 40px;
 }
 
@@ -96,7 +96,7 @@ section:nth-child(3) div {
 
 .button:active {
     background-color: red;
-}
+} */
 
 @media screen and (min-width: 768px) {
     body {

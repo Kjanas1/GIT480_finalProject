@@ -149,15 +149,16 @@ table {
 	--color3: #1034A6;
 	--color4: #7FFFD4;
 	--color5: #A550FF;
+	--color6: #36454f;
 }
 
 /* --- Mobile --- */
 
 body {
-	background-color: darkslateblue;
+	background-color: var(--color1);
 }
 main{
-	background-color: seashell;
+	background-color: var(--color2);
 	padding: 20px;
 	margin: 10px 0 0 0;
 	
@@ -180,28 +181,97 @@ h1 {
 h2{
 	font-size: 32px;
 }
+.button {
+    padding: 20px 15px;
+    margin: 10px;
+    border-radius: 32px;
+    background-color: var(--color3);
+	color: var(--color4);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.808);
+    border-width: 0;
+    text-decoration: none;
+    font-size: 24px;
+    /* text-wrap: wrap; */
+    max-height: 40px;
+}
+.button:hover {
+    background-color: var(--color1);
+}
 
+.button:active {
+    background-color: var(--color5);
+}
 nav {
-	background-color: grey;
+	background-color: var(--color6);
 	display: flex;
 	flex-direction: row;
 	height: 50px;
 }
-/* nav ul{
+nav ul{
+	display: none;
+	/* faking */
+
 	position: absolute;
 	top: 0;
 	left: 0;
-} */
-
+}
+nav a{
+	font-size: 32px;
+	color: white;
+	text-decoration: none;
+}
+nav a:hover{
+	color:var(--color4);
+	background-color: var(--color3);
+	border-radius: 32px;
+    background-color: var(--color3);
+	padding: 0 20px;
+}
+nav a:active{
+	color:var(--color5);
+	background-color: var(--color1);
+	color: var(--color4);
+}
 footer {
-	background-color: grey;
+	display: flex;
+	flex-direction: column;
+	background-color: var(--color6);
 	text-align: center;
 }
+small{
+	color: white;
+	padding: 10px;
+}
+.socials{
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 10px;
+}
+.socials img{
+	height: 50px
+}
+
 
 /* --- Screen width: >1024px --- */
-/* @media screen and (min-width: 801px) {
-	main{
+@media screen and (min-width: 801px) {
+	/* main{
 		padding: 20px;
 		margin: 0 20px;
-	}
-} */
+	} */
+	 nav{
+		display: block;
+		align-content: center;
+	 }
+	 nav img{
+		display: none;
+	 }
+	 nav ul{
+		position: initial;
+		top: auto;
+		left: auto;
+		display: flex;
+		justify-content: space-between;
+		padding: 0 50px;
+		/* width: 100%; */
+	 }
+}

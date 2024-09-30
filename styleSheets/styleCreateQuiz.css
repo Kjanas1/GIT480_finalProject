@@ -5,7 +5,7 @@ main{
     display: flex;
     flex-direction: column;
 }
-button {
+/* button {
     padding: 20px 15px;
     margin: 10px;
     border-radius: 32px;
@@ -14,7 +14,6 @@ button {
     border-width: 0;
     text-decoration: none;
     font-size: 24px;
-    /* text-wrap: wrap; */
 }
 button:hover {
     background-color: aqua;
@@ -22,7 +21,10 @@ button:hover {
 
 button:active {
     background-color: red;
-}
+} */
+ .button{
+    max-height: initial;
+ }
 @media screen and (min-width: 801px) {
     main{
         text-align:left;
