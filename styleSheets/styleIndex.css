@@ -23,7 +23,7 @@ section {
     /* align-items: center; */
 }
 
-section div {
+.sectionDesc {
     display: grid;
     position: absolute;
     /* flex-direction: column; */
@@ -31,19 +31,21 @@ section div {
     max-height: 100%;
     overflow: hidden;
     align-items: center;
+    color: white;
+    background-color:rgba(0, 0, 0, 0.5);
 }
 
-div p {
+.sectionDesc p {
     grid-area: bodytext;
     align-self: self-start;
 }
 
-div h1 {
+.sectionDesc h1 {
     grid-area: title;
     align-self: end;
 }
 
-div a {
+.sectionDesc a {
     grid-area: button;
     align-self: start;
 }
@@ -53,7 +55,7 @@ section:nth-child(3) h1 {
     align-self: center;
 }
 
-section:nth-child(1) div {
+section:nth-child(1) .sectionDesc {
     /* bottom: 8px; */
     right: 16px;
     grid-template-areas: "title ."
@@ -61,7 +63,7 @@ section:nth-child(1) div {
     height: 100%;
 }
 
-section:nth-child(2) div {
+section:nth-child(2) .sectionDesc {
     /* bottom: 8px; */
     /* left: 16px; */
     grid-template-areas: ". title"
@@ -69,7 +71,7 @@ section:nth-child(2) div {
     height: 100%;
 }
 
-section:nth-child(3) div {
+section:nth-child(3) .sectionDesc {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -103,7 +105,7 @@ section:nth-child(3) div {
         background-color: blueviolet;
     }
 
-    /* section:nth-child(1) div,section:nth-child(3) div {
+    /* section:nth-child(1) .sectionDesc,section:nth-child(3) .sectionDesc {
         position: absolute;
         bottom: 8px;
         right: 16px;
@@ -112,7 +114,7 @@ section:nth-child(3) div {
             "bodytext button";
     }
     
-    section:nth-child(2) div {
+    section:nth-child(2) .sectionDesc {
         position: absolute;
         bottom: 8px;
         left: 16px;
@@ -121,7 +123,7 @@ section:nth-child(3) div {
             "button bodytext";
     } */
 
-    section div {
+    section .sectionDesc {
         /* position: absolute; */
         display: flex;
         flex-direction: column;
@@ -132,22 +134,22 @@ section:nth-child(3) div {
         /* left: 50%; */
     }
 
-    section:nth-child(1) div {
+    section:nth-child(1) .sectionDesc {
         left: 50%
     }
 
-    section:nth-child(2) div {
+    section:nth-child(2) .sectionDesc {
         right: 50%
     }
 
-    section:nth-child(3) div {
+    section:nth-child(3) .sectionDesc {
         justify-content: start;
     }
 
-    div h1 {
+    .sectionDesc h1 {
         align-self: center;
     }
-    div a {
+    .sectionDesc a {
         grid-area: button;
         align-self: center;
     }

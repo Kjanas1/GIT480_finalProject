@@ -220,6 +220,9 @@ nav a{
 	color: white;
 	text-decoration: none;
 }
+.logo{
+	height: 100%;
+}
 nav a:hover{
 	color:var(--color4);
 	background-color: var(--color3);
