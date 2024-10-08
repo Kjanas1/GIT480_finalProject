@@ -1,0 +1,45 @@
+{
+    "quiz1": {
+        "title": "title",
+        "img": "link",
+        "desc": "desc",
+        "questions": {
+            "q1": {
+                "desc": "question Description",
+                "img": "maybe",
+                "alt": "alt text for image?",
+                "ans1": {
+                    "text": "This is the correct answer",
+                    "correct": true
+                },
+                "ans2": {
+                    "text": "this is an incorrect answer"
+                },
+                "ans3": {
+                    "text": "this is an incorrect answer"
+                },
+                "ans4": {
+                    "text": "this is an incorrect answer"
+                }
+            },
+            "q2": {
+                "desc": "question Description",
+                "img": "maybe",
+                "alt": "alt text for image?",
+                "ans1": {
+                    "text": "This is the correct answer",
+                    "correct": true
+                },
+                "ans2": {
+                    "text": "this is an incorrect answer"
+                },
+                "ans3": {
+                    "text": "this is an incorrect answer"
+                },
+                "ans4": {
+                    "text": "this is an incorrect answer"
+                }
+            }
+        }
+    }
+}
