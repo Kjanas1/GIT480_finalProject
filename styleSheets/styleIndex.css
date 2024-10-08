@@ -141,9 +141,10 @@ section:nth-child(3) .sectionDesc {
     section:nth-child(2) .sectionDesc {
         right: 50%
     }
-
     section:nth-child(3) .sectionDesc {
-        justify-content: start;
+        justify-content: center;
+        align-content: center;
+        padding: 0 50px;
     }
 
     .sectionDesc h1 {
