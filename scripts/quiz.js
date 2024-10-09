@@ -1,6 +1,3 @@
-// order of things
-// 3. call questions
-
 function setQuizChoice() {
     if (localStorage.getItem("quizChoice") == 0) {
         console.log("error");
@@ -74,6 +71,7 @@ let app = {
         var quizJson = JSON.parse(sessionStorage.getItem("quizData"));
 
         this.currPosition = 0;
+        this.score = 0;
 
         let titleDiv = document.getElementById('title');
         // titleDiv.textContent = quizJson.title;
@@ -87,6 +85,9 @@ let app = {
 
             }.bind(this));
         }.bind(this)); //needed to pass context along to the object
+
+        // display score
+        this.updateStats();
 
         //show first question
         // this.showQuestion(quizJson);
@@ -112,12 +113,18 @@ let app = {
 
         if (currQuestion.correctAnswer == userSelected) {
             //correct
-            console.log('correct')
+            console.log('correct');
+            this.score++;
+            this.showresult(true);
         }
         else {
             //incorrect
-            console.log("wrong")
+            console.log("wrong");
+            this.showresult(false);
         }
+        //refresh stats
+        this.updateStats();
+
         //increase position
         this.increasePosition();
 
@@ -131,7 +138,38 @@ let app = {
         if (this.currPosition == questions.length) {
             this.currPosition = 0;
         }
+    },
+    updateStats: function () {
+        let scoreDiv = document.getElementById("score");
+        scoreDiv.textContent = `Your Score: ${this.score}`;
+    },
+    showresult: function (isCorrect) {
+        let resultDiv = document.getElementById("result");
+        let result = "";
+
+        //checks
+        if(isCorrect){
+            result = "Correct Answer!";
+        }
+        else{
+            //get current question
+            let currQuestion= questions[this.currPosition];
+
+            //get correct answer index
+            let correctAnsIndex = currQuestion.correctAnswer;
+
+            //get correct answer
+            let correctAnsText = currQuestion.alternatives[correctAnsIndex]
+
+
+            result = `Wrong Answer!
+            The correct answer was: ${correctAnsText}`;
+        }
+
+        resultDiv.textContent = result;
+
     }
+
 };
 
 setQuizChoice()
