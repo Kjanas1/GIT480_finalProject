@@ -14,7 +14,8 @@
 </head>
 
 <body>
-    <script src="script.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/quiz.js" defer></script>
     <div id="jump">
         <a href="">Jump to Navigation</a>
         <a href="">Jump to Main</a>
@@ -33,16 +34,16 @@
     </header>
 
     <main>
-        <h1>Quiz Title</h1>
-        <div id="progressBar"></div>  <!-- holds the progress bar -->
+        <h1 id="title">Quiz Title</h1>
+        <div id="progressBar"></div> <!-- holds the progress bar -->
         <div class="question"> <!-- each Question -->
-            <h2>Question Number</h2>
-            <p>Question Body</p>
-            <div class="answerBank">
-                <button class="button">Answer 1</button>
-                <button class="button">Answer 2</button>
-                <button class="button">Answer 3</button>
-                <button class="button">Answer 4</button>
+            <h2 id="questionNumber">Question Number</h2>
+            <p id="questionText">Question Body</p>
+            <div id="answerBank">
+                <button class="button"></button>
+                <button class="button"></button>
+                <button class="button"></button>
+                <button class="button"></button>
             </div>
             <picture>
                 <source media="(min-width:650px)" srcset="graphics\images\quizPlaceholder_Lg.png">

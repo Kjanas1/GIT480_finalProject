@@ -1,45 +1,167 @@
 {
-    "quiz1": {
-        "title": "title",
-        "img": "link",
-        "desc": "desc",
-        "questions": {
-            "q1": {
-                "desc": "question Description",
-                "img": "maybe",
-                "alt": "alt text for image?",
-                "ans1": {
-                    "text": "This is the correct answer",
-                    "correct": true
-                },
-                "ans2": {
-                    "text": "this is an incorrect answer"
-                },
-                "ans3": {
-                    "text": "this is an incorrect answer"
-                },
-                "ans4": {
-                    "text": "this is an incorrect answer"
-                }
-            },
-            "q2": {
-                "desc": "question Description",
-                "img": "maybe",
-                "alt": "alt text for image?",
-                "ans1": {
-                    "text": "This is the correct answer",
-                    "correct": true
-                },
-                "ans2": {
-                    "text": "this is an incorrect answer"
-                },
-                "ans3": {
-                    "text": "this is an incorrect answer"
-                },
-                "ans4": {
-                    "text": "this is an incorrect answer"
-                }
-            }
+    "title": "title",
+    "img": "graphics/images/quizImages/q1Main.png",
+    "desc": "desc",
+    "questions": {
+        "q1": {
+            "desc": "question Description",
+            "img": "graphics/images/quizImages/placeholderSq3.png",
+            "alt": "alt text for image?",
+            "answers": [
+                "This is the correct answer",
+                "this is an incorrect answer",
+                "this is an incorrect answer",
+                "this is an incorrect answer"
+            ],
+            "correctAnswer": 1
+        }
+    },
+    "q2": {
+        "desc": "question Description",
+        "img": "graphics/images/quizImages/placeholderSq3.png",
+        "alt": "alt text for image?",
+        "answers": [
+            "This is the correct answer",
+            "this is an incorrect answer",
+            "this is an incorrect answer",
+            "this is an incorrect answer"
+        ],
+        "correctAnswer": 1
+    },
+    "q3": {
+        "desc": "question Description",
+        "img": "graphics/images/quizImages/placeholderSq2.png",
+        "alt": "alt text for image?",
+        "answers": {
+            "desc": "question Description",
+            "img": "graphics/images/quizImages/placeholderSq3.png",
+            "alt": "alt text for image?",
+            "answers": [
+                "This is the correct answer",
+                "this is an incorrect answer",
+                "this is an incorrect answer",
+                "this is an incorrect answer"
+            ],
+            "correctAnswer": 1
+        }
+    },
+    "q4": {
+        "desc": "question Description",
+        "img": "graphics/images/quizImages/placeholderSq3.png",
+        "alt": "alt text for image?",
+        "answers": {
+            "desc": "question Description",
+            "img": "graphics/images/quizImages/placeholderSq3.png",
+            "alt": "alt text for image?",
+            "answers": [
+                "This is the correct answer",
+                "this is an incorrect answer",
+                "this is an incorrect answer",
+                "this is an incorrect answer"
+            ],
+            "correctAnswer": 1
+        }
+    },
+    "q5": {
+        "desc": "question Description",
+        "img": "graphics/images/quizImages/placeholderSq1.png",
+        "alt": "alt text for image?",
+        "answers": {
+            "desc": "question Description",
+            "img": "graphics/images/quizImages/placeholderSq3.png",
+            "alt": "alt text for image?",
+            "answers": [
+                "This is the correct answer",
+                "this is an incorrect answer",
+                "this is an incorrect answer",
+                "this is an incorrect answer"
+            ],
+            "correctAnswer": 1
+        }
+    },
+    "q6": {
+        "desc": "question Description",
+        "img": "graphics/images/quizImages/placeholderSq2.png",
+        "alt": "alt text for image?",
+        "answers": {
+            "desc": "question Description",
+            "img": "graphics/images/quizImages/placeholderSq3.png",
+            "alt": "alt text for image?",
+            "answers": [
+                "This is the correct answer",
+                "this is an incorrect answer",
+                "this is an incorrect answer",
+                "this is an incorrect answer"
+            ],
+            "correctAnswer": 1
+        }
+    },
+    "q7": {
+        "desc": "question Description",
+        "img": "graphics/images/quizImages/placeholderSq3.png",
+        "alt": "alt text for image?",
+        "answers": {
+            "desc": "question Description",
+            "img": "graphics/images/quizImages/placeholderSq3.png",
+            "alt": "alt text for image?",
+            "answers": [
+                "This is the correct answer",
+                "this is an incorrect answer",
+                "this is an incorrect answer",
+                "this is an incorrect answer"
+            ],
+            "correctAnswer": 1
+        }
+    },
+    "q8": {
+        "desc": "question Description",
+        "img": "graphics/images/quizImages/placeholderSq1.png",
+        "alt": "alt text for image?",
+        "answers": {
+            "desc": "question Description",
+            "img": "graphics/images/quizImages/placeholderSq3.png",
+            "alt": "alt text for image?",
+            "answers": [
+                "This is the correct answer",
+                "this is an incorrect answer",
+                "this is an incorrect answer",
+                "this is an incorrect answer"
+            ],
+            "correctAnswer": 1
+        }
+    },
+    "q9": {
+        "desc": "question Description",
+        "img": "graphics/images/quizImages/placeholderSq2.png",
+        "alt": "alt text for image?",
+        "answers": {
+            "desc": "question Description",
+            "img": "graphics/images/quizImages/placeholderSq3.png",
+            "alt": "alt text for image?",
+            "answers": [
+                "This is the correct answer",
+                "this is an incorrect answer",
+                "this is an incorrect answer",
+                "this is an incorrect answer"
+            ],
+            "correctAnswer": 1
+        }
+    },
+    "q10": {
+        "desc": "question Description",
+        "img": "graphics/images/quizImages/placeholderSq3.png",
+        "alt": "alt text for image?",
+        "answers": {
+            "desc": "question Description",
+            "img": "graphics/images/quizImages/placeholderSq3.png",
+            "alt": "alt text for image?",
+            "answers": [
+                "This is the correct answer",
+                "this is an incorrect answer",
+                "this is an incorrect answer",
+                "this is an incorrect answer"
+            ],
+            "correctAnswer": 1
         }
     }
 }
