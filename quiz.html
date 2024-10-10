@@ -34,16 +34,16 @@
     </header>
 
     <main>
-        <h1 id="title">Quiz Title</h1>
+        <h1 id="quizTitle">Quiz Title</h1>
         <div id="score"></div> <!-- holds the progress bar -->
         <div class="question"> <!-- each Question -->
             <h2 id="questionNumber">Question Number</h2>
             <p id="questionText">Question Body</p>
             <div id="answerBank">
-                <button class="button"></button>
-                <button class="button"></button>
-                <button class="button"></button>
-                <button class="button"></button>
+                <button class="button ansButton"></button>
+                <button class="button ansButton"></button>
+                <button class="button ansButton"></button>
+                <button class="button ansButton"></button>
             </div>
             <div id="result"></div>
             <picture>
@@ -51,6 +51,11 @@
                 <source media="(min-width:465px)" srcset="graphics\images\quizPlaceholder_Sm.png">
                 <img src="graphics\images\quizSelectPlaceholder_Lg.png" alt="">
             </picture>
+        </div>
+        <div id="resultsScreen" class="hidden">
+            <p>Quiz Complete!</p>
+            <button id="retakeBtn" class="button resultBtn">Take again</button>
+            <button id="redirectBtn" class="button resultBtn"><a href="quizSelectionStandard.html">Return to Quiz select</a></button>
         </div>
     </main>
 

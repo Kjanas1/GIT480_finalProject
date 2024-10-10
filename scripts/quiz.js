@@ -1,5 +1,8 @@
+var questions = [];
+var info = {};
+
 function setQuizChoice() {
-    if (localStorage.getItem("quizChoice") == 0) {
+    if ((localStorage.getItem("quizChoice") == 0) || !(localStorage.getItem("quizChoice"))) {
         console.log("error");
         //load redirect function
     }
@@ -7,14 +10,15 @@ function setQuizChoice() {
         // sessionStorage.setItem("quizChoice",`quiz${localStorage.getItem("quizChoice")}`);
         sessionStorage.setItem("quizChoice", localStorage.getItem("quizChoice"));
         localStorage.setItem("quizChoice", 0);
-        getQuiz();
+        getQuizData();
     }
+    //will change this to ifs 1-4, else (which includes 0);
 };
 
-function getQuiz() {
+function getQuizData() {
     //retrieve JSON
     // endpoint address & variable
-    let serverEndpoint = "https://f93a4022-8613-4164-b8f8-36749f0f90d4.mock.pstmn.io/quiz1";
+    let serverEndpoint = "https://360d4d44-cda1-43c6-8367-59bfccf8af80.mock.pstmn.io/quizData";
     let endpoint = `${serverEndpoint}`;
 
     // XMLHttp Resquest
@@ -25,7 +29,8 @@ function getQuiz() {
             // display quiz
 
             //stores quiz data in SessionStorage
-            sessionStorage.setItem("quizData", JSON.stringify(this.response))
+            // sessionStorage.setItem("quizData", JSON.stringify(this.response))
+            loadQuiz(this.response);
 
         } else {
             // display an error message 
@@ -42,42 +47,67 @@ function getQuiz() {
     // send the request
     xhr.send();
 };
-
-let questions = [
-    {
-        title: 'gato',
-        alternatives: ['dog', 'cat', 'bird', 'fish'],
-        correctAnswer: 1
-    },
-    {
-        title: 'ave',
-        alternatives: ['mouse', 'hamster', 'lizard', 'bird'],
-        correctAnswer: 3
-    },
-    {
-        title: 'rata',
-        alternatives: ['cat', 'fish', 'rat', 'shark'],
-        correctAnswer: 2
-    },
-    {
-        title: 'mosca',
-        alternatives: ['fly', 'puma', 'fish', 'dog'],
-        correctAnswer: 0
+function loadQuiz(quizData) {
+    console.log(quizData);
+    if (sessionStorage.getItem("quizChoice") == 1) {
+        info = quizData.quiz1.info;
+        questions = quizData.quiz1.questions;
+        app.start();
     }
-];
+    else if (sessionStorage.getItem("quizChoice") == 2) {
+        info = quizData.quiz2.info;
+        questions = quizData.quiz2.questions;
+        app.start();
+    }
+    else if (sessionStorage.getItem("quizChoice") == 3) {
+        info = quizData.quiz3.info;
+        questions = quizData.quiz3.questions;
+        app.start();
+    }
+    else if (sessionStorage.getItem("quizChoice") == 4) {
+        // Custom Quiz
+        app.start();
+    }
+    else {
+        console.log("error");
+    }
+}
+
+// let questions = [
+//     {
+//         title: 'gato',
+//         alternatives: ['dog', 'cat', 'bird', 'fish'],
+//         correctAnswer: 1
+//     },
+//     {
+//         title: 'ave',
+//         alternatives: ['mouse', 'hamster', 'lizard', 'bird'],
+//         correctAnswer: 3
+//     },
+//     {
+//         title: 'rata',
+//         alternatives: ['cat', 'fish', 'rat', 'shark'],
+//         correctAnswer: 2
+//     },
+//     {
+//         title: 'mosca',
+//         alternatives: ['fly', 'puma', 'fish', 'dog'],
+//         correctAnswer: 0
+//     }
+// ];
 
 let app = {
     start: function () {
-        var quizJson = JSON.parse(sessionStorage.getItem("quizData"));
+        // var quizJson = JSON.parse(sessionStorage.getItem("quizData"));
 
         this.currPosition = 0;
         this.score = 0;
 
-        let titleDiv = document.getElementById('title');
-        // titleDiv.textContent = quizJson.title;
+        let quizTitle = document.getElementById('quizTitle');
+        quizTitle.textContent = info.title;
         // titleDiv.textContent = question.title;
 
-        let answerButtons = document.querySelectorAll('.button');
+        let answerButtons = document.querySelectorAll('.ansButton');
         answerButtons.forEach(function (element, index) {
             element.addEventListener("click", function () {
                 //check for correct answer
@@ -101,7 +131,7 @@ let app = {
         questionDesc.textContent = q.title;
 
         //show answers
-        let answers = document.querySelectorAll('.button');
+        let answers = document.querySelectorAll('.ansButton');
         answers.forEach(function (element, index) {
             // element.textContent = q.questions.q1.answers[index];
             element.textContent = q.alternatives[index];
@@ -112,32 +142,38 @@ let app = {
         let currQuestion = questions[this.currPosition];
 
         if (currQuestion.correctAnswer == userSelected) {
-            //correct
-            console.log('correct');
+            // console.log('correct');
             this.score++;
             this.showresult(true);
         }
         else {
-            //incorrect
-            console.log("wrong");
+            // console.log("wrong");
             this.showresult(false);
         }
+
         //refresh stats
         this.updateStats();
 
         //increase position
         this.increasePosition();
 
-        //show next question
-        this.showQuestion(questions[this.currPosition]);
+        //if position > array length, then results screen.
+        if (this.currPosition == questions.length) {
+            console.log("quiz complete");
+            this.completeQuiz(); // results screen?
+        }
+        else {
+            //else, show next question
+            this.showQuestion(questions[this.currPosition]);
+        }
 
     },
     increasePosition: function () {
         this.currPosition++;
 
-        if (this.currPosition == questions.length) {
-            this.currPosition = 0;
-        }
+        // if (this.currPosition == questions.length) {
+        //     this.currPosition = 0;
+        // }
     },
     updateStats: function () {
         let scoreDiv = document.getElementById("score");
@@ -148,12 +184,12 @@ let app = {
         let result = "";
 
         //checks
-        if(isCorrect){
+        if (isCorrect) {
             result = "Correct Answer!";
         }
-        else{
+        else {
             //get current question
-            let currQuestion= questions[this.currPosition];
+            let currQuestion = questions[this.currPosition];
 
             //get correct answer index
             let correctAnsIndex = currQuestion.correctAnswer;
@@ -168,9 +204,20 @@ let app = {
 
         resultDiv.textContent = result;
 
+    },
+    completeQuiz: function () {
+        let resultsDiv = document.getElementById("resultsScreen");
+        resultsDiv.classList.remove("hidden")
+
+        let retakeButton = document.getElementById('retakeBtn');
+        retakeButton.addEventListener("click", function () {
+            localStorage.setItem("quizChoice", sessionStorage.getItem("quizChoice"));
+            location.reload();
+            //a really blunt way to reset the quiz, but cheap to do under the circumstances.
+        }.bind(this)); //needed to pass context along to the object
+
     }
 
 };
 
 setQuizChoice()
-app.start();

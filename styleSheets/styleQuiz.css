@@ -21,6 +21,10 @@ button:active {
  .button{
     max-height: initial;
  }
+ #redirectBtn a {
+	text-decoration: none;
+    color: #7fffd4;
+}
 .question{
     text-align: center;
     display: flex;
@@ -29,6 +33,16 @@ button:active {
 #answerBank {
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+#resultsScreen{
+    position: fixed;
+    top:30%;
+    left:20%;
+    background-color: #f0f8ff;
+    border-color: blue;
+    border-style: solid;
+    border-width: 5px;
+
 }
 @media screen and (min-width: 801px) {
     img{
