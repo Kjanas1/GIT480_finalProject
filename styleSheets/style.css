@@ -144,11 +144,11 @@ table {
 
 /* --- Global --- */
 :root {
-	--color1: #1E2952;
+	--color1: #1e2952;
 	--color2: #F0F8FF;
 	--color3: #1034A6;
 	--color4: #7FFFD4;
-	--color5: #A550FF;
+	--color5: #a550ff;
 	--color6: #36454f;
 }
 
@@ -211,12 +211,12 @@ nav {
 	height: 50px;
 }
 nav ul{
-	display: none;
-	/* faking */
+	/* display: none;
+	faking */
 
 	position: absolute;
-	top: 0;
-	left: 0;
+	top: -1000px;
+	left: -1000px;
 }
 nav a{
 	font-size: 32px;
@@ -225,6 +225,18 @@ nav a{
 }
 .logo{
 	height: 100%;
+}
+#hamburgerBtn{
+	background-color:transparent;
+}
+.visibleNav{
+	position:fixed;
+	top: 0px;
+	left: 0px;
+	background-color: brown;
+}
+.visibleNav li{
+	padding: 50px;
 }
 nav a:hover{
 	color:var(--color4);
@@ -279,5 +291,8 @@ small{
 		justify-content: space-between;
 		padding: 0 50px;
 		/* width: 100%; */
+	 }
+	 #hamburgerBtn{
+		display: none;
 	 }
 }

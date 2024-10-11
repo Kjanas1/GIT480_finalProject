@@ -10,3 +10,7 @@ document.getElementById("takeCustomQuiz").addEventListener("click", quiz4Direct)
 window.onload = function () {
     localStorage.setItem("quizChoice", 0);
 };
+document.getElementById("editQuiz").addEventListener("click", quiz4Direct);
+window.onload = function () {
+    localStorage.setItem("edit", true);
+};

@@ -5,6 +5,66 @@ let questionx
 
 // let question = document.getElementById('questionsForm');
 
+
+function loadModule() {
+    if (localStorage.getItem("edit") == "true") {
+        localStorage.setItem("edit", "false");
+        loadSavedQuiz();
+        // console.log("load saved");
+    }
+    else {
+        appendQuestion();
+    }
+
+}
+
+function loadSavedQuiz() {
+    //get questions array
+    customQuiz = localStorage.getItem("customQuiz");
+    customJson = JSON.parse(customQuiz);
+
+    //load title
+    let quizTitle = document.getElementById("name");
+    quizTitle.value = customJson.info.title;
+
+    //load questions in fields, one question at a time
+
+    //get custom questions array
+    let questionArr = customJson.questions;
+
+    //set number of question fields based on custom question array length
+    for (var i = 0; i < questionArr.length; i++) {
+        appendQuestion();
+    }
+
+    //get question fields array
+    indivQuestions = document.querySelectorAll(".question");
+
+    for (var j = 0; j < indivQuestions.length; j++) {
+        //fill question & answer fields
+        indivQuestions[j][0].value = questionArr[j].title;
+        indivQuestions[j][1].value = questionArr[j].alternatives[0];
+        indivQuestions[j][2].value = questionArr[j].alternatives[1];
+        indivQuestions[j][3].value = questionArr[j].alternatives[2];
+        indivQuestions[j][4].value = questionArr[j].alternatives[3];
+
+        //assign correct answer
+        let correct = questionArr[j].correctAnswer
+
+        if (indivQuestions[j][5].value == correct) {
+            indivQuestions[j][5].checked = true;
+        } else if (indivQuestions[j][6].value == correct) {
+            indivQuestions[j][6].checked = true;
+        } else if (indivQuestions[j][7].value == correct) {
+            indivQuestions[j][7].checked = true;
+        } else if (indivQuestions[j][8].value == correct) {
+            indivQuestions[j][8].checked = true;
+        }
+
+    }
+
+}
+
 function appendQuestion() {
     questionCount++
 
@@ -98,4 +158,4 @@ function saveQuiz() {
 document.getElementById("addQuestion").addEventListener("click", appendQuestion);
 document.getElementById("completeQuiz").addEventListener("click", saveQuiz);
 
-appendQuestion();
+loadModule();

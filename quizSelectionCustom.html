@@ -23,8 +23,8 @@
 
     <header>
         <nav>
-            <img src="graphics\svg\menu.svg" alt="hamburger">
-            <ul>
+            <button id="hamburgerBtn"><img src="graphics\svg\menu.svg" alt="hamburger"></button>
+            <ul id="navList">
                 <li class="logo"><a href="index.html">Main</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="quizSelectionStandard.html">Quiz</a></li>
@@ -54,7 +54,7 @@
             </picture>
         </div>
         <div class="quizInfo">
-            <a href="createQuiz.html" class="button"><h2>Edit a Saved Quiz</h2></a>
+            <a href="createQuiz.html" id="editQuiz" class="button"><h2>Edit a Saved Quiz</h2></a>
             <p>Edit Body text</p>
             <picture>
                 <source media="(min-width:768px)" srcset="graphics\images\customEdit_Lg.png">
