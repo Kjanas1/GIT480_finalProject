@@ -1,167 +1,149 @@
 {
-    "title": "title",
-    "img": "graphics/images/quizImages/q1Main.png",
-    "desc": "desc",
-    "questions": {
-        "q1": {
-            "desc": "question Description",
-            "img": "graphics/images/quizImages/placeholderSq3.png",
-            "alt": "alt text for image?",
-            "answers": [
-                "This is the correct answer",
-                "this is an incorrect answer",
-                "this is an incorrect answer",
-                "this is an incorrect answer"
-            ],
-            "correctAnswer": 1
-        }
+    "quiz1": {
+        "info": {
+            "title": "Quiz 1 title",
+            "img": "graphics/images/quizImages/q1Main.png",
+            "desc": "desc"
+        },
+        "questions": [
+            {
+                "title": "gato",
+                "alternatives": [
+                    "dog",
+                    "cat",
+                    "bird",
+                    "fish"
+                ],
+                "correctAnswer": 1
+            },
+            {
+                "title": "ave",
+                "alternatives": [
+                    "mouse",
+                    "hamster",
+                    "lizard",
+                    "bird"
+                ],
+                "correctAnswer": 3
+            },
+            {
+                "title": "rata",
+                "alternatives": [
+                    "cat",
+                    "fish",
+                    "rat",
+                    "shark"
+                ],
+                "correctAnswer": 2
+            },
+            {
+                "title": "mosca",
+                "alternatives": [
+                    "fly",
+                    "puma",
+                    "fish",
+                    "dog"
+                ],
+                "correctAnswer": 0
+            }
+        ]
     },
-    "q2": {
-        "desc": "question Description",
-        "img": "graphics/images/quizImages/placeholderSq3.png",
-        "alt": "alt text for image?",
-        "answers": [
-            "This is the correct answer",
-            "this is an incorrect answer",
-            "this is an incorrect answer",
-            "this is an incorrect answer"
-        ],
-        "correctAnswer": 1
+    "quiz2": {
+        "info": {
+            "title": "Quiz 2 title",
+            "img": "graphics/images/quizImages/q1Main.png",
+            "desc": "desc"
+        },
+        "questions": [
+            {
+                "title": "gato",
+                "alternatives": [
+                    "dog",
+                    "cat",
+                    "bird",
+                    "fish"
+                ],
+                "correctAnswer": 1
+            },
+            {
+                "title": "ave",
+                "alternatives": [
+                    "mouse",
+                    "hamster",
+                    "lizard",
+                    "bird"
+                ],
+                "correctAnswer": 3
+            },
+            {
+                "title": "rata",
+                "alternatives": [
+                    "cat",
+                    "fish",
+                    "rat",
+                    "shark"
+                ],
+                "correctAnswer": 2
+            },
+            {
+                "title": "mosca",
+                "alternatives": [
+                    "fly",
+                    "puma",
+                    "fish",
+                    "dog"
+                ],
+                "correctAnswer": 0
+            }
+        ]
     },
-    "q3": {
-        "desc": "question Description",
-        "img": "graphics/images/quizImages/placeholderSq2.png",
-        "alt": "alt text for image?",
-        "answers": {
-            "desc": "question Description",
-            "img": "graphics/images/quizImages/placeholderSq3.png",
-            "alt": "alt text for image?",
-            "answers": [
-                "This is the correct answer",
-                "this is an incorrect answer",
-                "this is an incorrect answer",
-                "this is an incorrect answer"
-            ],
-            "correctAnswer": 1
-        }
-    },
-    "q4": {
-        "desc": "question Description",
-        "img": "graphics/images/quizImages/placeholderSq3.png",
-        "alt": "alt text for image?",
-        "answers": {
-            "desc": "question Description",
-            "img": "graphics/images/quizImages/placeholderSq3.png",
-            "alt": "alt text for image?",
-            "answers": [
-                "This is the correct answer",
-                "this is an incorrect answer",
-                "this is an incorrect answer",
-                "this is an incorrect answer"
-            ],
-            "correctAnswer": 1
-        }
-    },
-    "q5": {
-        "desc": "question Description",
-        "img": "graphics/images/quizImages/placeholderSq1.png",
-        "alt": "alt text for image?",
-        "answers": {
-            "desc": "question Description",
-            "img": "graphics/images/quizImages/placeholderSq3.png",
-            "alt": "alt text for image?",
-            "answers": [
-                "This is the correct answer",
-                "this is an incorrect answer",
-                "this is an incorrect answer",
-                "this is an incorrect answer"
-            ],
-            "correctAnswer": 1
-        }
-    },
-    "q6": {
-        "desc": "question Description",
-        "img": "graphics/images/quizImages/placeholderSq2.png",
-        "alt": "alt text for image?",
-        "answers": {
-            "desc": "question Description",
-            "img": "graphics/images/quizImages/placeholderSq3.png",
-            "alt": "alt text for image?",
-            "answers": [
-                "This is the correct answer",
-                "this is an incorrect answer",
-                "this is an incorrect answer",
-                "this is an incorrect answer"
-            ],
-            "correctAnswer": 1
-        }
-    },
-    "q7": {
-        "desc": "question Description",
-        "img": "graphics/images/quizImages/placeholderSq3.png",
-        "alt": "alt text for image?",
-        "answers": {
-            "desc": "question Description",
-            "img": "graphics/images/quizImages/placeholderSq3.png",
-            "alt": "alt text for image?",
-            "answers": [
-                "This is the correct answer",
-                "this is an incorrect answer",
-                "this is an incorrect answer",
-                "this is an incorrect answer"
-            ],
-            "correctAnswer": 1
-        }
-    },
-    "q8": {
-        "desc": "question Description",
-        "img": "graphics/images/quizImages/placeholderSq1.png",
-        "alt": "alt text for image?",
-        "answers": {
-            "desc": "question Description",
-            "img": "graphics/images/quizImages/placeholderSq3.png",
-            "alt": "alt text for image?",
-            "answers": [
-                "This is the correct answer",
-                "this is an incorrect answer",
-                "this is an incorrect answer",
-                "this is an incorrect answer"
-            ],
-            "correctAnswer": 1
-        }
-    },
-    "q9": {
-        "desc": "question Description",
-        "img": "graphics/images/quizImages/placeholderSq2.png",
-        "alt": "alt text for image?",
-        "answers": {
-            "desc": "question Description",
-            "img": "graphics/images/quizImages/placeholderSq3.png",
-            "alt": "alt text for image?",
-            "answers": [
-                "This is the correct answer",
-                "this is an incorrect answer",
-                "this is an incorrect answer",
-                "this is an incorrect answer"
-            ],
-            "correctAnswer": 1
-        }
-    },
-    "q10": {
-        "desc": "question Description",
-        "img": "graphics/images/quizImages/placeholderSq3.png",
-        "alt": "alt text for image?",
-        "answers": {
-            "desc": "question Description",
-            "img": "graphics/images/quizImages/placeholderSq3.png",
-            "alt": "alt text for image?",
-            "answers": [
-                "This is the correct answer",
-                "this is an incorrect answer",
-                "this is an incorrect answer",
-                "this is an incorrect answer"
-            ],
-            "correctAnswer": 1
-        }
+    "quiz3": {
+        "info": {
+            "title": "Quiz 3 title",
+            "img": "graphics/images/quizImages/q1Main.png",
+            "desc": "desc"
+        },
+        "questions": [
+            {
+                "title": "gato",
+                "alternatives": [
+                    "dog",
+                    "cat",
+                    "bird",
+                    "fish"
+                ],
+                "correctAnswer": 1
+            },
+            {
+                "title": "ave",
+                "alternatives": [
+                    "mouse",
+                    "hamster",
+                    "lizard",
+                    "bird"
+                ],
+                "correctAnswer": 3
+            },
+            {
+                "title": "rata",
+                "alternatives": [
+                    "cat",
+                    "fish",
+                    "rat",
+                    "shark"
+                ],
+                "correctAnswer": 2
+            },
+            {
+                "title": "mosca",
+                "alternatives": [
+                    "fly",
+                    "puma",
+                    "fish",
+                    "dog"
+                ],
+                "correctAnswer": 0
+            }
+        ]
     }
 }

@@ -14,7 +14,8 @@
 </head>
 
 <body>
-    <script src="script.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/createQuizScript.js" defer></script>
     <div id="jump">
         <a href="">Jump to Navigation</a>
         <a href="">Jump to Main</a>
@@ -32,25 +33,18 @@
         </nav>
     </header>
 
+
     <main>
         <h1>Create a quiz</h1>
         <form id="quizName">
             <label for="name">Quiz Name:</label><input type="text" id="name">
         </form>
-        <form class="question">
-            <h2>Question 1</h2>
-            <label for="q1Answer1">Question</label>
-            <input type="text" id="q1Answer1">
-            <label for="q1Answer2">Question</label>
-            <input type="text" id="q1Answer2">
-            <label for="q1Answer3">Question</label>
-            <input type="text" id="q1Answer3">
-            <label for="q1Answer4">Question</label>
-            <input type="text" id="q1Answer4">
-        </form>
+        <div id="questionsContainer">
+        </div>
         <div id="buttonContainer">
-            <button class="button">Add another Question</button>
-            <button class="button">Finish Quiz</button>
+            <button id="addQuestion" class="button">Add another Question</button>
+            <button id="completeQuiz" class="button"><a href="quiz.html">Finish Quiz</a></button>
+            <!-- <button id="completeQuiz" class="button">Finish Quiz</button> -->
         </div>
     </main>
 

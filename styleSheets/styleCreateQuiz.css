@@ -5,6 +5,10 @@ main{
     display: flex;
     flex-direction: column;
 }
+.answerRadio {
+    display: flex;
+}
+
 /* button {
     padding: 20px 15px;
     margin: 10px;

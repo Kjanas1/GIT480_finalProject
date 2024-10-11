@@ -65,7 +65,11 @@ function loadQuiz(quizData) {
         app.start();
     }
     else if (sessionStorage.getItem("quizChoice") == 4) {
-        // Custom Quiz
+        let customQuizJson = JSON.parse(localStorage.getItem("customQuiz"));
+
+        info = customQuizJson.info;
+        questions = customQuizJson.questions;
+        // info = sessionStorage.getItem("customQuiz").info
         app.start();
     }
     else {
