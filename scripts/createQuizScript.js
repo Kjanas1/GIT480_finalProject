@@ -15,7 +15,6 @@ function loadModule() {
     else {
         appendQuestion();
     }
-
 }
 
 function loadSavedQuiz() {
@@ -26,8 +25,6 @@ function loadSavedQuiz() {
     //load title
     let quizTitle = document.getElementById("name");
     quizTitle.value = customJson.info.title;
-
-    //load questions in fields, one question at a time
 
     //get custom questions array
     let questionArr = customJson.questions;
@@ -40,8 +37,8 @@ function loadSavedQuiz() {
     //get question fields array
     indivQuestions = document.querySelectorAll(".question");
 
+    //load questions in fields, one question at a time
     for (var j = 0; j < indivQuestions.length; j++) {
-        //fill question & answer fields
         indivQuestions[j][0].value = questionArr[j].title;
         indivQuestions[j][1].value = questionArr[j].alternatives[0];
         indivQuestions[j][2].value = questionArr[j].alternatives[1];
@@ -80,29 +77,22 @@ function appendQuestion() {
 
     //create question text & Append
     let newQuestionInput = document.createElement("div");
-
-    newQuestionInput.innerHTML = " <form class='question'><label>Question</label><input type='text'><label>Answer 1: </label><input type='text'><label>Answer 2: </label><input type='text'><label>Answer 3: </label><input type='text'><label>Answer 4: </label><input type='text'><div class ='answerRadio'><h3>Correct Answer</h3><input type='radio' value=1><label>1</label><br><input type='radio'value=2><label>2</label><br><input type='radio' value=3><label>3</label><input type='radio' value=4><label>4</label><div></form>"
-
-    // Get the parent element where you want to add the new paragraph
-    formDiv = document.getElementById('questionsContainer');
+    let radioname = `radio${questionCount}` //radio inputs need the same name attribute
+    newQuestionInput.innerHTML = `<form class='question'><label>Question</label><input type='text'><label>Answer 1: </label><input type='text'><label>Answer 2: </label><input type='text'><label>Answer 3: </label><input type='text'><label>Answer 4: </label><input type='text'><div class ='answerRadio'><h3>Correct Answer</h3><input type='radio' name='${radioname}'value=1><label>1</label><br><input type='radio' name='${radioname}' value=2><label>2</label><br><input type='radio' name='${radioname}' value=3><label>3</label><input type='radio' name='${radioname}' value=4><label>4</label><div></form>`;
 
     // Append the new paragraph to the parent element
+    formDiv = document.getElementById('questionsContainer');
     formDiv.appendChild(newQuestionInput);
-    //create 4 answer boxes & Append
-
 }
 
-function saveQuiz() {
+function saveQuiz(e) {
+
     let questions = []
-    let questionCount = 0;
     let quizTitle = document.getElementById("name").value;
+    // let questionCount = 0;
+
     //create array of form class=question
     let indivQuestions = document.querySelectorAll(".question");
-    // console.log(indivQuestions);
-    // console.log(indivQuestions[0]);
-    // console.log(indivQuestions[0][0].value);
-
-    //assign Quiz title to variable (or just to the customQuiz.info.title key)
 
     //for each, assign title,question,answers,correctAnswer to an object
 
@@ -128,11 +118,8 @@ function saveQuiz() {
             ],
             "correctAnswer": correct
         }
-        // console.log(questionObj);
         questions.push(questionObj);
     }
-    console.log(questions)
-    console.log(document.getElementById("name").value)
 
     //append object to customQuiz.questions[]
 
@@ -142,20 +129,36 @@ function saveQuiz() {
         },
         "questions": questions
     };
-    // console.log(customQuizData);
-    console.log(indivQuestions[0][0]);
-    console.log(indivQuestions[0][0].value);
-    // console.log(indivQuestions[0][1]);
-    // console.log(indivQuestions[0][1].value);
 
-    //Strigify and save object customQuiz object to localstorage
+    //Strigify and save customQuiz object to localstorage
     localStorage.setItem("customQuiz", JSON.stringify(customQuizData));
 
     //sett local storage flag for quiz to load
     localStorage.setItem("quizChoice", 4)
 }
+function overwriteQuiz() {
+    //if local storage already has a value, ask user to confirm overwrite
+    let overwriteDiv = document.getElementById("overwriteWarning");
+    overwriteDiv.classList.remove("hidden");
+
+    document.getElementById("returnToCustomBtn").addEventListener("click", function (e) {
+        overwriteDiv.classList.add("hidden");
+    })
+    document.getElementById("overwriteBtn").addEventListener("click", function () {
+        saveQuiz();
+    });
+
+}
 
 document.getElementById("addQuestion").addEventListener("click", appendQuestion);
-document.getElementById("completeQuiz").addEventListener("click", saveQuiz);
+document.getElementById("completeQuiz").addEventListener("click", function (event) {
+    if (localStorage.getItem("customQuiz")) {
+        event.preventDefault();
+        overwriteQuiz();
+    }
+    else {
+        saveQuiz();
+    }
+});
 
 loadModule();

@@ -9,7 +9,7 @@ main {
 }
 
 picture {
-    background-color: ccp;
+    /* background-color: ccp; */
     /* not sure what's happening here */
 }
 
@@ -26,8 +26,6 @@ section {
 .sectionDesc {
     display: grid;
     position: absolute;
-    /* flex-direction: column; */
-    /* width: 33%; */
     max-height: 100%;
     overflow: hidden;
     align-items: center;
@@ -56,7 +54,6 @@ section:nth-child(3) h1 {
 }
 
 section:nth-child(1) .sectionDesc {
-    /* bottom: 8px; */
     right: 16px;
     grid-template-areas: "title ."
         "bodytext button";
@@ -64,8 +61,6 @@ section:nth-child(1) .sectionDesc {
 }
 
 section:nth-child(2) .sectionDesc {
-    /* bottom: 8px; */
-    /* left: 16px; */
     grid-template-areas: ". title"
         "button bodytext";
     height: 100%;
@@ -80,58 +75,15 @@ section:nth-child(3) .sectionDesc {
     /* left: 50%; */
 }
 
-/* .button {
-    padding: 20px 15px;
-    margin: 10px;
-    border-radius: 32px;
-    background-color: yellow;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.808);
-    border-width: 0;
-    text-decoration: none;
-    font-size: 24px;
-    max-height: 40px;
-}
-
-.button:hover {
-    background-color: aqua;
-}
-
-.button:active {
-    background-color: red;
-} */
-
 @media screen and (min-width: 768px) {
     body {
         background-color: blueviolet;
     }
-
-    /* section:nth-child(1) .sectionDesc,section:nth-child(3) .sectionDesc {
-        position: absolute;
-        bottom: 8px;
-        right: 16px;
-        width: 30%;
-        grid-template-areas: "title ."
-            "bodytext button";
-    }
-    
-    section:nth-child(2) .sectionDesc {
-        position: absolute;
-        bottom: 8px;
-        left: 16px;
-        width: 30%;
-        grid-template-areas: ". title"
-            "button bodytext";
-    } */
-
     section .sectionDesc {
-        /* position: absolute; */
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-content: center;
-
-        /* bottom: 8px; */
-        /* left: 50%; */
     }
 
     section:nth-child(1) .sectionDesc {

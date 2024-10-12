@@ -1,148 +1,334 @@
 {
     "quiz1": {
         "info": {
-            "title": "Quiz 1 title",
+            "title": "Data Quiz",
             "img": "graphics/images/quizImages/q1Main.png",
-            "desc": "desc"
+            "desc": "What is Data? Characters and symbols might be data. Computers are designed to process data so it is important to understand what 'data' is and how it is different to 'information'.",
+            "Creator":"Education Quizzes",
+            "source": "https://www.educationquizzes.com/library/New-Printable-Quizzes-From-TES/KS3_ICT_-_Data.pdf"
         },
         "questions": [
             {
-                "title": "gato",
+                "title": "Data is... ",
                 "alternatives": [
-                    "dog",
-                    "cat",
-                    "bird",
-                    "fish"
-                ],
-                "correctAnswer": 1
-            },
-            {
-                "title": "ave",
-                "alternatives": [
-                    "mouse",
-                    "hamster",
-                    "lizard",
-                    "bird"
+                    "a character in a science fiction TV series",
+                    "letters, numbers or characters with meaning",
+                    "letters, numbers or characters with no meaning",
+                    "stored numbers"
                 ],
                 "correctAnswer": 3
             },
             {
-                "title": "rata",
+                "title": "A storage location contains the digits  31122012.",
                 "alternatives": [
-                    "cat",
-                    "fish",
-                    "rat",
-                    "shark"
+                    "This might be a piece of data ",
+                    "This is a date ",
+                    "This is certainly a piece of information ",
+                    "None of these"
                 ],
-                "correctAnswer": 2
+                "correctAnswer": 1
             },
             {
-                "title": "mosca",
+                "title": "Data is stored by computers in locations called...",
                 "alternatives": [
-                    "fly",
-                    "puma",
-                    "fish",
-                    "dog"
+                    "bikes",
+                    "binaries",
+                    "bytes",
+                    "byttes"
                 ],
-                "correctAnswer": 0
+                "correctAnswer": 3
+            },
+            {
+                "title": "Computers use binary code to store data because... ",
+                "alternatives": [
+                    "binary code is more reliable ",
+                    "binary code is much faster ",
+                    "binary code takes up less space",
+                    "electronic circuits can only be 'on' or 'off' "
+                ],
+                "correctAnswer": 4
+            },
+            {
+                "title": "In most computers how many 'bits' make up a 'byte'?",
+                "alternatives": [
+                    "8",
+                    "9",
+                    "32",
+                    "36"
+                ],
+                "correctAnswer": 1
+            },
+            {
+                "title": "Data enters a computer... ",
+                "alternatives": [
+                    "before processing but after the entry stage ",
+                    "during the entry stage",
+                    "during the input stage",
+                    "during the processing stage"
+                ],
+                "correctAnswer": 3
+            },
+            {
+                "title": "Which is not a measure of storage size? ",
+                "alternatives": [
+                    "Megabyte",
+                    "Gigabyte",
+                    "bytTerabytees",
+                    "Kilabyte"
+                ],
+                "correctAnswer": 4
+            },
+            {
+                "title": "Data entered should be 'validated'. This means... ",
+                "alternatives": [
+                    "it should be checked to make sure it contains no error",
+                    "it should be checked to make sure it is correct",
+                    "it should be checked to make sure it is sensible",
+                    "it should be entered in small batches "
+                ],
+                "correctAnswer": 3
+            },
+            {
+                "title": "Data entered should be 'verified'. This means...",
+                "alternatives": [
+                    "it should be checked for viruses ",
+                    "it should be checked to make sure it is completely accurate ",
+                    "it should be checked to make sure it is entered correctly ",
+                    "it should be checked to make sure it is reasonable "
+                ],
+                "correctAnswer": 3
+            },
+            {
+                "title": "Which is not a means of entering data into a computer?",
+                "alternatives": [
+                    "Barcode reader",
+                    "Monitor",
+                    "Keyboard",
+                    "Scanner"
+                ],
+                "correctAnswer": 2
             }
         ]
     },
     "quiz2": {
         "info": {
-            "title": "Quiz 2 title",
+            "title": "Chemistry Quiz",
             "img": "graphics/images/quizImages/q1Main.png",
-            "desc": "desc"
+            "desc": "Chemical reactions are all around us. We can see many reactions such as fireworks and explosions. Many are very useful, such as cooking and combustion. Others are equally vital but are not quite as obvious such as photosynthesis and respiration. ",
+            "Creator":"Education Quizzes",
+            "source": "https://www.educationquizzes.com/library/New-Printable-Quizzes-From-TES/GCSE_Chemistry_-_Chemical_Reactions.pdf"
         },
         "questions": [
             {
-                "title": "gato",
+                "title": "What type of reaction occurs when hydrocarbons burn in an insufficient supply of oxygen?",
                 "alternatives": [
-                    "dog",
-                    "cat",
-                    "bird",
-                    "fish"
-                ],
-                "correctAnswer": 1
-            },
-            {
-                "title": "ave",
-                "alternatives": [
-                    "mouse",
-                    "hamster",
-                    "lizard",
-                    "bird"
-                ],
-                "correctAnswer": 3
-            },
-            {
-                "title": "rata",
-                "alternatives": [
-                    "cat",
-                    "fish",
-                    "rat",
-                    "shark"
+                    "Combustion",
+                    "Incomplete combustion",
+                    "Reduction",
+                    "Thermal decomposition"
                 ],
                 "correctAnswer": 2
             },
             {
-                "title": "mosca",
+                "title": "What type of reaction occurs at the positive electrode when copper sulphate is electrolysed using copper electrodes?",
                 "alternatives": [
-                    "fly",
-                    "puma",
-                    "fish",
-                    "dog"
+                    "Oxidation",
+                    "Reduction",
+                    "Combustion",
+                    "Decomposition"
                 ],
-                "correctAnswer": 0
+                "correctAnswer": 1
+            },
+            {
+                "title": " What type of reaction does the following word equation describe? Magnesium + zinc chloride → magnesium chloride + zinc",
+                "alternatives": [
+                    "Oxidation",
+                    "Reduction",
+                    "Thermal decomposition",
+                    "Displacement"
+                ],
+                "correctAnswer": 4
+            },
+            {
+                "title": "What type of reaction occurs when limestone (calcium carbonate) is heated and becomes calcium oxide? ",
+                "alternatives": [
+                    "Oxidation",
+                    "Reduction",
+                    "Thermal decomposition",
+                    "Displacement"
+                ],
+                "correctAnswer": 3
+            },
+            {
+                "title": "What type of reaction is shown by the following word equation? Hydrochloric acid + sodium hydroxide → sodium chloride + water ",
+                "alternatives": [
+                    "Decomposition",
+                    "Displacement",
+                    "Neutralisation",
+                    "Combustion"
+                ],
+                "correctAnswer": 3
+            },
+            {
+                "title": "What type of reaction is shown in the symbol equation? Fe2O3 + 3CO → 2Fe + 3CO2 ",
+                "alternatives": [
+                    "Oxidation",
+                    "Combustion",
+                    "Reduction",
+                    "Decomposition"
+                ],
+                "correctAnswer": 3
+            },
+            {
+                "title": "What reaction is occurring when decane is split into ethene and octane?",
+                "alternatives": [
+                    "Cracking",
+                    "Polymerisation",
+                    "Reduction",
+                    "Neutralisation"
+                ],
+                "correctAnswer": 1
+            },
+            {
+                "title": "What reaction is involved in the hardening of vegetable oils? ",
+                "alternatives": [
+                    "Polymerisation",
+                    "Cracking",
+                    "Hydrogenation",
+                    "Setting"
+                ],
+                "correctAnswer": 3
+            },
+            {
+                "title": "What reaction is involved in the production of poly(ester)?",
+                "alternatives": [
+                    "Cracking",
+                    "Polymerisation",
+                    "Decomposition",
+                    "Neutralisation"
+                ],
+                "correctAnswer": 2
+            },
+            {
+                "title": "What is the only reaction that removes carbon dioxide from the atmosphere naturally?",
+                "alternatives": [
+                    "Decomposition",
+                    "Combustion",
+                    "Respiration",
+                    "Photosynthesis"
+                ],
+                "correctAnswer": 4
             }
         ]
     },
     "quiz3": {
-        "info": {
-            "title": "Quiz 3 title",
+       "info": {
+            "title": "Music Fundamentals Quiz",
             "img": "graphics/images/quizImages/q1Main.png",
-            "desc": "desc"
+            "desc": "The Fundamental Elements of Music are: Pitch, Duration, Dynamics, Tempo, Timbre, Texture and Structure. Have a go at the following quiz to see how much you've been taking notice in your Music lessons!",
+            "Creator":"Education Quizzes",
+            "source": "https://www.educationquizzes.com/library/New-Printable-Quizzes-From-TES/KS3_Music_-_Fundamental_Elements_of_Music.pdf"
         },
         "questions": [
             {
-                "title": "gato",
+                "title": "Which element of music best describes how 'high' or 'low' notes sound? ",
                 "alternatives": [
-                    "dog",
-                    "cat",
-                    "bird",
-                    "fish"
+                    "Pitch",
+                    "Rhythm",
+                    "Texture",
+                    "Timbre"
                 ],
                 "correctAnswer": 1
             },
             {
-                "title": "ave",
+                "title": "In terms of duration, which is longest of these notes?",
                 "alternatives": [
-                    "mouse",
-                    "hamster",
-                    "lizard",
-                    "bird"
+                    "Dotted quaver",
+                    "Minim",
+                    "Semibreve",
+                    "Semiquaver"
                 ],
                 "correctAnswer": 3
             },
             {
-                "title": "rata",
+                "title": "What is the purpose of dynamics in a piece of music?",
                 "alternatives": [
-                    "cat",
-                    "fish",
-                    "rat",
-                    "shark"
+                    "To express how loud or quiet the music should be played ",
+                    "To illustrate a key signature",
+                    "To represent a change of speed",
+                    "shTo show a change of time signature ark"
+                ],
+                "correctAnswer": 1
+            },
+            {
+                "title": "What does 'andante' mean? ",
+                "alternatives": [
+                    "At a moderate/'walking' pace ",
+                    "Gradually getting faster ",
+                    "Very fast ",
+                    "Very slow "
+                ],
+                "correctAnswer": 1
+            },
+            {
+                "title": "What best describes the effect of a 'ritardando'? ",
+                "alternatives": [
+                    "A gradual increase of volume",
+                    "A sudden pause",
+                    "Changing of key signature ",
+                    "Gradually getting slower "
+                ],
+                "correctAnswer": 4
+            },
+            {
+                "title": "Which of these instruments has a 'bright' timbre? ",
+                "alternatives": [
+                    "Bassoon",
+                    "Cello",
+                    "Double bass",
+                    "Piccolo"
+                ],
+                "correctAnswer": 4
+            },
+            {
+                "title": "What is a 'homophonic' texture? ",
+                "alternatives": [
+                    "A single and unaccompanied voice",
+                    "Multiple voices varying a main melody simultaneously ",
+                    "The overlapping of several melodic voices in a piece ",
+                    "Where one voice stands out on top of a backing harmony "
+                ],
+                "correctAnswer": 4
+            },
+            {
+                "title": "What does the marking 'mezzo forte' (mf) mean? ",
+                "alternatives": [
+                    "Moderately loud",
+                    "Moderately quiet ",
+                    "Very loud ",
+                    "Very quiet "
+                ],
+                "correctAnswer": 1
+            },
+            {
+                "title": "Binary form is made up of how many sections?",
+                "alternatives": [
+                    "One (A)  a single section often repeated ",
+                    "Two (AB) ",
+                    "Three (ABA) ",
+                    "Five (ABACD) "
                 ],
                 "correctAnswer": 2
             },
             {
-                "title": "mosca",
+                "title": "A minim is made up of how many quaver beats? ",
                 "alternatives": [
-                    "fly",
-                    "puma",
-                    "fish",
-                    "dog"
+                    "Three",
+                    "Four",
+                    "Six",
+                    "Eight"
                 ],
-                "correctAnswer": 0
+                "correctAnswer": 2
             }
         ]
     }

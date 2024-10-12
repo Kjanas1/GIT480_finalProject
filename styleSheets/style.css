@@ -195,7 +195,7 @@ h2{
     text-decoration: none;
     font-size: 24px;
     /* text-wrap: wrap; */
-    max-height: 40px;
+    /* max-height: 40px; */
 }
 .button:hover {
     background-color: var(--color1);
@@ -233,7 +233,7 @@ nav a{
 	position:fixed;
 	top: 0px;
 	left: 0px;
-	background-color: brown;
+	background-color: var(--color6);
 }
 .visibleNav li{
 	padding: 50px;
@@ -266,7 +266,11 @@ small{
 	padding-bottom: 10px;
 }
 .socials img{
-	height: 50px
+	height: 50px;
+}
+.socials img:hover{
+	background-color: var(--color1);
+	border-radius: 50px;
 }
 
 

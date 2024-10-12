@@ -23,7 +23,7 @@
 
     <header>
         <nav>
-            <button id="hamburgerBtn"><img src="graphics\svg\menu.svg" alt="hamburger"></button>
+            <button id="hamburgerBtn"><img src="graphics/svg/menu.svg" alt="hamburger"></button>
             <ul id="navList">
                 <li class="logo"><a href="index.html">Main</a></li>
                 <li><a href="about.html">About</a></li>
@@ -45,28 +45,31 @@
                 <button class="button ansButton"></button>
                 <button class="button ansButton"></button>
             </div>
-            <picture>
-                <source media="(min-width:650px)" srcset="graphics\images\quizPlaceholder_Lg.png">
-                <source media="(min-width:465px)" srcset="graphics\images\quizPlaceholder_Sm.png">
-                <img src="graphics\images\quizSelectPlaceholder_Lg.png" alt="">
-            </picture>
+            <div id="quizImg"></div>
+            <!-- <picture>
+                <source media="(min-width:650px)" srcset="graphics/images/quizPlaceholder_Lg.png">
+                <source media="(min-width:465px)" srcset="graphics/images/quizPlaceholder_Sm.png">
+                <img src="graphics/images/quizSelectPlaceholder_Lg.png" alt="">
+            </picture> -->
         </div>
         <p id="result"></p>
         <div id="resultsScreen" class="hidden">
-            <p>Quiz Complete!</p>
+            <h3>Quiz Complete!</h3>
+            <p id="quizResults"></p>
             <button id="retakeBtn" class="button resultBtn">Take again</button>
-            <button id="redirectBtn" class="button resultBtn"><a href="quizSelectionStandard.html">Return to Quiz select</a></button>
+            <a id="redirectBtn" class="button resultBtn" href="quizSelectionStandard.html">Return to Quiz select</a>
+            <a id="redirectEditBtn" class="button resultBtn hidden" href="quizSelectionCustom.html">Return to Custom Quiz select</a>
         </div>
     </main>
 
     <footer>
         <small>&copy; Kevin Janas<br>For educational purposes only</small>
         <div class="socials">
-            <img src="graphics\svg\bluesky.svg">
-            <img src="graphics\svg\discord.svg">
-            <img src="graphics\svg\facebook.svg">
-            <img src="graphics\svg\instagram.svg">
-            <img src="graphics\svg\xSocial.svg">
+            <img src="graphics/svg/bluesky.svg">
+            <img src="graphics/svg/discord.svg">
+            <img src="graphics/svg/facebook.svg">
+            <img src="graphics/svg/instagram.svg">
+            <img src="graphics/svg/xSocial.svg">
         </div>
     </footer>
 

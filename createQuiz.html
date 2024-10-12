@@ -23,7 +23,7 @@
 
     <header>
         <nav>
-            <button id="hamburgerBtn"><img src="graphics\svg\menu.svg" alt="hamburger"></button>
+            <button id="hamburgerBtn"><img src="graphics/svg/menu.svg" alt="hamburger"></button>
             <ul id="navList">
                 <li class="logo"><a href="index.html">Main</a></li>
                 <li><a href="about.html">About</a></li>
@@ -43,19 +43,24 @@
         </div>
         <div id="buttonContainer">
             <button id="addQuestion" class="button">Add another Question</button>
-            <button id="completeQuiz" class="button"><a href="quiz.html">Finish Quiz</a></button>
+            <a id="completeQuiz" class="button" href="quiz.html">Finish Quiz</a>
             <!-- <button id="completeQuiz" class="button">Finish Quiz</button> -->
+        </div>
+        <div id="overwriteWarning" class="hidden">
+            <p>There's a previous quiz saved on this browser. Overwrite?</p>
+            <button id="returnToCustomBtn" class="button">Return to page</button>
+            <a id="overwriteBtn" class="button" href="quiz.html">Overwrite Quiz</a>
         </div>
     </main>
 
     <footer>
         <small>&copy; Kevin Janas<br>For educational purposes only</small>
         <div class="socials">
-            <img src="graphics\svg\bluesky.svg">
-            <img src="graphics\svg\discord.svg">
-            <img src="graphics\svg\facebook.svg">
-            <img src="graphics\svg\instagram.svg">
-            <img src="graphics\svg\xSocial.svg">
+            <img src="graphics/svg/bluesky.svg">
+            <img src="graphics/svg/discord.svg">
+            <img src="graphics/svg/facebook.svg">
+            <img src="graphics/svg/instagram.svg">
+            <img src="graphics/svg/xSocial.svg">
         </div>
     </footer>
 
