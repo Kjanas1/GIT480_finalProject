@@ -184,9 +184,12 @@ h1 {
 h2{
 	font-size: 32px;
 }
+p{
+	font-size: 1.5rem;
+}
 .button {
     padding: 20px 15px;
-    margin: 10px;
+    margin: 25px 10px;
     border-radius: 32px;
     background-color: var(--color3);
 	color: var(--color4);

@@ -16,7 +16,7 @@ function setQuizChoice() {
 function getQuizData() {
     //retrieve JSON
     // endpoint address & variable
-    let serverEndpoint = "https://8d2fa16d-4e87-4f8d-8a22-5a5beac16b80.mock.pstmn.io/quizData";
+    let serverEndpoint = "https://0f0de7d5-cbcc-4c9e-811e-4644db55a9be.mock.pstmn.io/quiz";
     let endpoint = `${serverEndpoint}`;
 
     // XMLHttp Resquest
@@ -83,7 +83,16 @@ let app = {
         quizTitle.textContent = info.title;
 
         let quizImgDiv = document.getElementById('quizImg');
-        let quizImg = info.img;
+        let quizImg;
+
+        //custom quiz doesn't have a custom img in its object.
+        if(sessionStorage.getItem("quizChoice")==4){
+            quizImg = "graphics/images/quizImages/qCMain.png"
+        }
+        else{
+            quizImg = info.img;
+        }
+        
         quizImgDiv.innerHTML= `<img src="${quizImg}">`
 
         let answerButtons = document.querySelectorAll('.ansButton');
@@ -102,6 +111,10 @@ let app = {
         this.showQuestion(questions[this.currPosition]);
     },
     showQuestion: function (q) {
+
+        //show question number
+        let questionNumber = document.getElementById("questionNumber");
+        questionNumber.textContent = `Question #${this.currPosition+1}`;
 
         //show question
         let questionDesc = document.getElementById("questionText")

@@ -1,6 +1,14 @@
+:root {
+	--color1: #1e2952;
+	--color2: #F0F8FF;
+	--color3: #1034A6;
+	--color4: #7FFFD4;
+	--color5: #a550ff;
+	--color6: #36454f;
+}
 body {
     margin: 0;
-    background-color: aqua;
+    background-color: var(--color6);
 }
 
 main {
@@ -9,8 +17,8 @@ main {
 }
 
 picture {
-    /* background-color: ccp; */
-    /* not sure what's happening here */
+    background-color: var(--color6);
+
 }
 
 img {
@@ -20,7 +28,7 @@ img {
 section {
     position: relative;
     text-align: center;
-    /* align-items: center; */
+
 }
 
 .sectionDesc {
@@ -77,7 +85,7 @@ section:nth-child(3) .sectionDesc {
 
 @media screen and (min-width: 768px) {
     body {
-        background-color: blueviolet;
+        background-color: var(--color6);
     }
     section .sectionDesc {
         display: flex;

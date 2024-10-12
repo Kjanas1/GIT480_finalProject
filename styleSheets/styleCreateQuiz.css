@@ -1,3 +1,11 @@
+:root {
+	--color1: #1e2952;
+	--color2: #F0F8FF;
+	--color3: #1034A6;
+	--color4: #7FFFD4;
+	--color5: #a550ff;
+	--color6: #36454f;
+}
 main{
     text-align: center;
 }
@@ -8,36 +16,25 @@ main{
 .answerRadio {
     display: flex;
 }
-
-/* button {
-    padding: 20px 15px;
-    margin: 10px;
-    border-radius: 32px;
-    background-color: yellow;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.808);
-    border-width: 0;
-    text-decoration: none;
-    font-size: 24px;
-}
-button:hover {
-    background-color: aqua;
-}
-
-button:active {
-    background-color: red;
-} */
  .button{
     max-height: initial;
  }
  #overwriteWarning{
+    text-align: center;
     position: fixed;
     top:30%;
     left:20%;
-    background-color: #f0f8ff;
-    border-color: blue;
+    background-color: var(--color2);
+    border-color: var(--color3);
     border-style: solid;
     border-width: 5px;
     box-shadow: 0 8px 200px 100px rgba(30, 41, 82, 0.808);
+}
+#questionsContainer h2{
+    margin-top: 20px;
+}
+.answerRadio{
+    margin-top: 10px;
 }
 
 @media screen and (min-width: 801px) {

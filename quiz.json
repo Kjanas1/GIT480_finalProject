@@ -16,7 +16,7 @@
                     "letters, numbers or characters with no meaning",
                     "stored numbers"
                 ],
-                "correctAnswer": 3
+                "correctAnswer": 2
             },
             {
                 "title": "A storage location contains the digits  31122012.",
@@ -26,7 +26,7 @@
                     "This is certainly a piece of information ",
                     "None of these"
                 ],
-                "correctAnswer": 1
+                "correctAnswer": 0
             },
             {
                 "title": "Data is stored by computers in locations called...",
@@ -36,7 +36,7 @@
                     "bytes",
                     "byttes"
                 ],
-                "correctAnswer": 3
+                "correctAnswer": 2
             },
             {
                 "title": "Computers use binary code to store data because... ",
@@ -46,7 +46,7 @@
                     "binary code takes up less space",
                     "electronic circuits can only be 'on' or 'off' "
                 ],
-                "correctAnswer": 4
+                "correctAnswer": 3
             },
             {
                 "title": "In most computers how many 'bits' make up a 'byte'?",
@@ -56,7 +56,7 @@
                     "32",
                     "36"
                 ],
-                "correctAnswer": 1
+                "correctAnswer": 0
             },
             {
                 "title": "Data enters a computer... ",
@@ -66,7 +66,7 @@
                     "during the input stage",
                     "during the processing stage"
                 ],
-                "correctAnswer": 3
+                "correctAnswer": 2
             },
             {
                 "title": "Which is not a measure of storage size? ",
@@ -76,7 +76,7 @@
                     "bytTerabytees",
                     "Kilabyte"
                 ],
-                "correctAnswer": 4
+                "correctAnswer": 3
             },
             {
                 "title": "Data entered should be 'validated'. This means... ",
@@ -86,7 +86,7 @@
                     "it should be checked to make sure it is sensible",
                     "it should be entered in small batches "
                 ],
-                "correctAnswer": 3
+                "correctAnswer": 2
             },
             {
                 "title": "Data entered should be 'verified'. This means...",
@@ -96,7 +96,7 @@
                     "it should be checked to make sure it is entered correctly ",
                     "it should be checked to make sure it is reasonable "
                 ],
-                "correctAnswer": 3
+                "correctAnswer": 2
             },
             {
                 "title": "Which is not a means of entering data into a computer?",
@@ -106,14 +106,14 @@
                     "Keyboard",
                     "Scanner"
                 ],
-                "correctAnswer": 2
+                "correctAnswer": 1
             }
         ]
     },
     "quiz2": {
         "info": {
             "title": "Chemistry Quiz",
-            "img": "graphics/images/quizImages/q1Main.png",
+            "img": "graphics/images/quizImages/q2Main.png",
             "desc": "Chemical reactions are all around us. We can see many reactions such as fireworks and explosions. Many are very useful, such as cooking and combustion. Others are equally vital but are not quite as obvious such as photosynthesis and respiration. ",
             "Creator":"Education Quizzes",
             "source": "https://www.educationquizzes.com/library/New-Printable-Quizzes-From-TES/GCSE_Chemistry_-_Chemical_Reactions.pdf"
@@ -127,7 +127,7 @@
                     "Reduction",
                     "Thermal decomposition"
                 ],
-                "correctAnswer": 2
+                "correctAnswer": 1
             },
             {
                 "title": "What type of reaction occurs at the positive electrode when copper sulphate is electrolysed using copper electrodes?",
@@ -137,7 +137,7 @@
                     "Combustion",
                     "Decomposition"
                 ],
-                "correctAnswer": 1
+                "correctAnswer": 0
             },
             {
                 "title": " What type of reaction does the following word equation describe? Magnesium + zinc chloride → magnesium chloride + zinc",
@@ -147,7 +147,7 @@
                     "Thermal decomposition",
                     "Displacement"
                 ],
-                "correctAnswer": 4
+                "correctAnswer": 3
             },
             {
                 "title": "What type of reaction occurs when limestone (calcium carbonate) is heated and becomes calcium oxide? ",
@@ -157,7 +157,7 @@
                     "Thermal decomposition",
                     "Displacement"
                 ],
-                "correctAnswer": 3
+                "correctAnswer": 2
             },
             {
                 "title": "What type of reaction is shown by the following word equation? Hydrochloric acid + sodium hydroxide → sodium chloride + water ",
@@ -167,7 +167,7 @@
                     "Neutralisation",
                     "Combustion"
                 ],
-                "correctAnswer": 3
+                "correctAnswer": 2
             },
             {
                 "title": "What type of reaction is shown in the symbol equation? Fe2O3 + 3CO → 2Fe + 3CO2 ",
@@ -177,7 +177,7 @@
                     "Reduction",
                     "Decomposition"
                 ],
-                "correctAnswer": 3
+                "correctAnswer": 2
             },
             {
                 "title": "What reaction is occurring when decane is split into ethene and octane?",
@@ -187,7 +187,7 @@
                     "Reduction",
                     "Neutralisation"
                 ],
-                "correctAnswer": 1
+                "correctAnswer": 0
             },
             {
                 "title": "What reaction is involved in the hardening of vegetable oils? ",
@@ -197,7 +197,7 @@
                     "Hydrogenation",
                     "Setting"
                 ],
-                "correctAnswer": 3
+                "correctAnswer": 2
             },
             {
                 "title": "What reaction is involved in the production of poly(ester)?",
@@ -207,7 +207,7 @@
                     "Decomposition",
                     "Neutralisation"
                 ],
-                "correctAnswer": 2
+                "correctAnswer": 1
             },
             {
                 "title": "What is the only reaction that removes carbon dioxide from the atmosphere naturally?",
@@ -217,14 +217,14 @@
                     "Respiration",
                     "Photosynthesis"
                 ],
-                "correctAnswer": 4
+                "correctAnswer": 3
             }
         ]
     },
     "quiz3": {
        "info": {
             "title": "Music Fundamentals Quiz",
-            "img": "graphics/images/quizImages/q1Main.png",
+            "img": "graphics/images/quizImages/q3Main.png",
             "desc": "The Fundamental Elements of Music are: Pitch, Duration, Dynamics, Tempo, Timbre, Texture and Structure. Have a go at the following quiz to see how much you've been taking notice in your Music lessons!",
             "Creator":"Education Quizzes",
             "source": "https://www.educationquizzes.com/library/New-Printable-Quizzes-From-TES/KS3_Music_-_Fundamental_Elements_of_Music.pdf"
@@ -238,7 +238,7 @@
                     "Texture",
                     "Timbre"
                 ],
-                "correctAnswer": 1
+                "correctAnswer": 0
             },
             {
                 "title": "In terms of duration, which is longest of these notes?",
@@ -248,7 +248,7 @@
                     "Semibreve",
                     "Semiquaver"
                 ],
-                "correctAnswer": 3
+                "correctAnswer": 2
             },
             {
                 "title": "What is the purpose of dynamics in a piece of music?",
@@ -258,7 +258,7 @@
                     "To represent a change of speed",
                     "shTo show a change of time signature ark"
                 ],
-                "correctAnswer": 1
+                "correctAnswer": 0
             },
             {
                 "title": "What does 'andante' mean? ",
@@ -268,7 +268,7 @@
                     "Very fast ",
                     "Very slow "
                 ],
-                "correctAnswer": 1
+                "correctAnswer": 0
             },
             {
                 "title": "What best describes the effect of a 'ritardando'? ",
@@ -278,7 +278,7 @@
                     "Changing of key signature ",
                     "Gradually getting slower "
                 ],
-                "correctAnswer": 4
+                "correctAnswer": 3
             },
             {
                 "title": "Which of these instruments has a 'bright' timbre? ",
@@ -288,7 +288,7 @@
                     "Double bass",
                     "Piccolo"
                 ],
-                "correctAnswer": 4
+                "correctAnswer": 3
             },
             {
                 "title": "What is a 'homophonic' texture? ",
@@ -298,7 +298,7 @@
                     "The overlapping of several melodic voices in a piece ",
                     "Where one voice stands out on top of a backing harmony "
                 ],
-                "correctAnswer": 4
+                "correctAnswer": 3
             },
             {
                 "title": "What does the marking 'mezzo forte' (mf) mean? ",
@@ -308,7 +308,7 @@
                     "Very loud ",
                     "Very quiet "
                 ],
-                "correctAnswer": 1
+                "correctAnswer": 0
             },
             {
                 "title": "Binary form is made up of how many sections?",
@@ -318,7 +318,7 @@
                     "Three (ABA) ",
                     "Five (ABACD) "
                 ],
-                "correctAnswer": 2
+                "correctAnswer": 1
             },
             {
                 "title": "A minim is made up of how many quaver beats? ",
@@ -328,7 +328,7 @@
                     "Six",
                     "Eight"
                 ],
-                "correctAnswer": 2
+                "correctAnswer": 1
             }
         ]
     }

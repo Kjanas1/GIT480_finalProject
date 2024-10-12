@@ -12,7 +12,7 @@ function quiz3Direct() {
 function getQuizData() {
     //retrieve JSON
     // endpoint address & variable
-    let serverEndpoint = "https://8d2fa16d-4e87-4f8d-8a22-5a5beac16b80.mock.pstmn.io/quizData";
+    let serverEndpoint = "https://0f0de7d5-cbcc-4c9e-811e-4644db55a9be.mock.pstmn.io/quiz";
     let endpoint = `${serverEndpoint}`;
 
     // XMLHttp Resquest
